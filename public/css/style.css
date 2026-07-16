@@ -1,0 +1,360 @@
+/* ==========================================
+   BASE & DARK MODE SETTINGS
+   ========================================== */
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+}
+body { 
+    background-color: #121212; 
+    color: #ffffff; 
+    padding-bottom: 50px; 
+}
+
+/* ==========================================
+   NAVIGATION BAR STYLE
+   ========================================== */
+.navbar { 
+    background-color: #1a1a1a; 
+    padding: 15px 0; 
+    border-bottom: 1px solid #2d2d2d; 
+    position: static; 
+    top: 0; 
+    z-index: 1000; 
+}
+.nav-container { 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 20px; 
+}
+.nav-logo { 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #ffc107; 
+    text-decoration: none; 
+}
+/* 🌟 SLIM AND OPTIMIZED NEON MATRIX CONTAINER 🌟 */
+.nav-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Mantini ang 3 columns */
+    gap: 10px;                             /* Binawasan mula 16px para mas dikit at compact */
+    margin-top: 15px;                      /* Binawasan ang top margin */
+    margin-bottom: 15px;                   /* Nilagyan ng saktong allowance sa ilalim */
+    width: 100%;
+    max-width: 850px;                      /* Pinakipot nang kaunti para mas proportioned */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 📱 Para sa Mobile Screens: Kapag sa cellphone mo na ito binuksan, gagawin nating tig-dadalawa (2 columns) para hindi sumikip */
+@media (max-width: 600px) {
+    .nav-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+.btn-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 14px;                    /* 🚀 PINALIIT: Mula 14px 20px, ginawang 10px 14px para slim! */
+    font-size: 13px;                       /* 🚀 PINALIIT: Mula 15px, ginawang 13px para hindi sumabog ang text */
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;                   /* Binawasan nang bahagya para kasya ang mahabang text */
+    border-radius: 6px;                    /* Ginawang saktong 6px para terno sa liit */
+    background: rgba(17, 34, 44, 0.6); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* 🔴 CUSTOM THEME: NEON RED (Setup & Laravel) */
+.btn-nav.red-theme {
+    color: #ff4d4d;
+    border: 1px solid rgba(255, 77, 77, 0.3);
+    box-shadow: 0 0 8px rgba(255, 77, 77, 0.1);
+}
+.btn-nav.red-theme:hover {
+    background: #ff4d4d !important;
+    color: #0b131a !important;
+    border-color: #ff4d4d !important;
+    box-shadow: 0 0 20px #ff4d4d, 0 0 35px rgba(255, 77, 77, 0.5);
+    transform: translateY(-2px) scale(1.01); /* Binawasan ang pag-angat para hindi mag-overlap */
+}
+
+/* 🔵 CUSTOM THEME: NEON CYAN (FileZilla & GitHub) */
+.btn-nav.cyan-theme {
+    color: #0dcaf0;
+    border: 1px solid rgba(13, 202, 240, 0.3);
+    box-shadow: 0 0 8px rgba(13, 202, 240, 0.1);
+}
+.btn-nav.cyan-theme:hover {
+    background: #0dcaf0 !important;
+    color: #0b131a !important;
+    border-color: #0dcaf0 !important;
+    box-shadow: 0 0 20px #0dcaf0, 0 0 35px rgba(13, 202, 240, 0.5);
+    transform: translateY(-2px) scale(1.01);
+}
+
+/* 🟢 CUSTOM THEME: NEON MATRIX GREEN (SSH) */
+.btn-nav.green-theme {
+    color: #198754;
+    border: 1px solid rgba(25, 135, 84, 0.3);
+    box-shadow: 0 0 8px rgba(25, 135, 84, 0.1);
+}
+.btn-nav.green-theme:hover {
+    background: #198754 !important;
+    color: #0b131a !important;
+    border-color: #198754 !important;
+    box-shadow: 0 0 20px #198754, 0 0 35px rgba(25, 135, 84, 0.5);
+    transform: translateY(-2px) scale(1.01);
+}
+
+/* 💓 THE MAHIWAGANG NEON HEARTBEAT PULSE ANIMATION (Health Only) */
+@keyframes neonPulse {
+    0% { transform: scale(1); box-shadow: 0 0 8px rgba(0, 210, 255, 0.3); }
+    30% { transform: scale(1.02); box-shadow: 0 0 15px #0dcaf0, 0 0 25px rgba(0, 210, 255, 0.4); }
+    45% { transform: scale(1); box-shadow: 0 0 12px rgba(0, 210, 255, 0.5); }
+    60% { transform: scale(1.02); box-shadow: 0 0 15px #0dcaf0, 0 0 25px rgba(0, 210, 255, 0.4); }
+    100% { transform: scale(1); box-shadow: 0 0 8px rgba(0, 210, 255, 0.3); }
+}
+.btn-nav.animated-health {
+    color: #0dcaf0;
+    border: 1px solid #0dcaf0 !important;
+    animation: neonPulse 2.5s infinite ease-in-out;
+}
+.btn-nav.animated-health:hover {
+    animation-play-state: paused;
+    background: #0dcaf0 !important;
+    color: #0b131a !important;
+    box-shadow: 0 0 25px #0dcaf0, 0 0 45px rgba(0, 210, 255, 0.6);
+    transform: translateY(-2px) scale(1.01);
+}
+
+/* 📱 Responsive Setup para sa Cellphone View */
+@media (max-width: 768px) {
+    .nav-buttons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    .btn-nav {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+}
+
+/* ==========================================
+   UNIVERSAL LAYOUT & PAGES
+   ========================================== */
+.container { 
+    max-width: 1000px; 
+    margin: 40px auto 0; 
+    padding: 0 20px; 
+}
+.text-center { text-align: center; }
+.text-muted { color: #b3b3b3; }
+.mb-2 { margin-bottom: 5px; }
+.mb-4 { margin-bottom: 20px; }
+.mb-5 { margin-bottom: 40px; }
+
+/* Dynamic Titles */
+.page-title { font-size: 32px; font-weight: bold; }
+.section-title { font-size: 20px; color: #ffc107; border-bottom: 1px solid #333; padding-bottom: 5px; margin-top: 30px; }
+
+/* Custom Text Colors for Titles */
+.text-cyan { color: #0dcaf0 !important; }
+.text-green { color: #198754 !important; }
+.text-red { color: #ff2d20 !important; }
+
+/* ==========================================
+   UNIVERSAL CARDS & GRID
+   ========================================== */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* ➔ Auto-drop sa next row ang card kapag masikip */
+    gap: 25px;               /* ➔ Maluwag na pagitan sa pagitan ng mga cards */
+    margin-top: 30px;
+    width: 100%;
+}
+
+.card { 
+    background-color: #1e1e1e; 
+    border: 1px solid #333333; 
+    border-radius: 8px; 
+    padding: 25px; 
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    transition: transform 0.2s; 
+}
+/* Dashboard configuration for cards width */
+.card-grid .card { max-width: 450px; } 
+
+.card:hover { 
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5); 
+}
+.card-title { font-size: 18px; font-weight: bold; margin-bottom: 10px; }
+.card-text { color: #b3b3b3; font-size: 14px; line-height: 1.6; flex-grow: 1; }
+
+/* Universal Card Action Buttons */
+.card-btn { 
+    text-decoration: none; 
+    text-align: center; 
+    font-weight: bold; 
+    padding: 10px; 
+    border-radius: 4px; 
+    margin-top: 20px; 
+    font-size: 14px; 
+    display: block; 
+}
+.card-btn.cyan  { background-color: #0dcaf0; color: #121212; }
+.card-btn.green { background-color: #198754; color: #121212; }
+.card-btn.red   { background-color: #ff2d20; color: #ffffff; }
+
+/* ==========================================
+   UNIVERSAL CODE BLOCKS
+   ========================================== */
+pre { 
+    background-color: #161616; 
+    padding: 15px; 
+    border-radius: 6px; 
+    border: 1px solid #2d2d2d; 
+    color: #ffffff; 
+    overflow-x: auto; 
+    margin-top: 15px; 
+}
+code { 
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 16px; 
+    font-weight: 500; 
+}
+
+/* 🟢 ANG MATTE GREEN NA SAGOT (CLASSIC TERMINAL LOOK - WALANG GLOW) */
+.ans { 
+    color: #4db97a !important; /* Ang orihinal na matte green na malinis sa mata */
+    font-weight: bold; 
+    font-size: 16px; 
+    text-shadow: none; 
+}
+
+
+/* ==========================================
+   UNIVERSAL COPY BUTTON STYLES
+   ========================================== */
+pre {
+    position: relative; /* Kailangan ito para manatili sa kanang gilid ang button */
+}
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #2a2a2a;
+    color: #b3b3b3;
+    border: 1px solid #444;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.copy-btn:hover {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border-color: #2ecc71; /* Magiging matte green ang border kapag tinutukan ng mouse */
+}
+.copy-btn.copied {
+    background-color: #198754;
+    color: #ffffff;
+    border-color: #198754;
+}
+
+
+/* ==========================================
+   GUMAGALAW NA LOGO STYLE (CYBER ANIMATION)
+   ========================================== */
+.animated-logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    
+    /* Safe Multi-Color Gradient */
+    background-image: linear-gradient(270deg, #ffc107, #ff4d4d, #2ecc71, #0dcaf0);
+    background-size: 800% 800%;
+    
+    /* Text Clipping standard syntax */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Animation definition */
+    animation: gradientMove 6s ease infinite;
+}
+
+/* Logic ng paggalaw ng kulay */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.card img, .card-image {
+    width: 100%;
+    height: auto;            /* ➔ Automatic na tatalon ang taas base sa lapad para iwas yupi */
+    object-fit: cover;       /* ➔ Swabeng pagkakalatag ng picture sa loob ng card box */
+    border-radius: 8px;
+}
+
+
+/* 🌟 MAHIWAGANG NEON HEARTBEAT PULSE ANIMATION 🌟 */
+@keyframes neonPulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(0, 210, 255, 0.4), 0 0 20px rgba(0, 210, 255, 0.2);
+    }
+    30% {
+        transform: scale(1.05); /* Pagtibok pataas */
+        box-shadow: 0 0 20px rgba(0, 210, 255, 0.8), 0 0 35px rgba(0, 210, 255, 0.5);
+    }
+    45% {
+        transform: scale(1); /* Pabalik sa normal */
+        box-shadow: 0 0 15px rgba(0, 210, 255, 0.6), 0 0 25px rgba(0, 210, 255, 0.3);
+    }
+    60% {
+        transform: scale(1.05); /* Pangalawang mabilis na tibok */
+        box-shadow: 0 0 20px rgba(0, 210, 255, 0.8), 0 0 35px rgba(0, 210, 255, 0.5);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(0, 210, 255, 0.4), 0 0 20px rgba(0, 210, 255, 0.2);
+    }
+}
+
+/* Ikabit ang animation sa partikular na class */
+.btn-nav.animated-health {
+    animation: neonPulse 2s infinite ease-in-out; /* Tuloy-tuloy na pagtibok tuwing 2 segundo */
+    border: 1px solid #0dcaf0 !important;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Mas titindi ang glow kapag itinapat ang mouse (Hover effect) */
+.btn-nav.animated-health:hover {
+    animation-play-state: paused; /* Humihinto ang tibok kapag tinapat ang mouse para madaling i-click */
+    background-color: #0dcaf0 !important;
+    color: #11222c !important;
+    box-shadow: 0 0 25px #0dcaf0, 0 0 50px rgba(0, 210, 255, 0.6);
+    transform: translateY(-3px) scale(1.05);
+}
