@@ -24,7 +24,11 @@
     <a class="btn-nav cyan-theme" href="/github">📁 GITHUB</a>
     <a class="btn-nav green-theme" href="/ssh">🔑 SSH SERVER</a>
     <a class="btn-nav red-theme" href="/laravel-install">🔥 LARAVEL</a>
+    
+    <!-- ROW 3 / AUTOMATION SPECIAL: ROBOT BUTTON -->
+    <a class="btn-nav animated-robot" href="/cicd">🤖 CI/CD ROBOT</a>
 </div>
+
 
 
 

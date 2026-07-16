@@ -358,3 +358,71 @@ pre {
     box-shadow: 0 0 25px #0dcaf0, 0 0 50px rgba(0, 210, 255, 0.6);
     transform: translateY(-3px) scale(1.05);
 }
+
+
+
+
+
+
+
+
+/* 🌈 THE MAHIWAGANG NEON RGB RAINBOW CHROMA WAVE ANIMATION */
+@keyframes rgbChroma {
+    0% {
+        border-color: #ff4d4d;
+        box-shadow: 0 0 12px rgba(255, 77, 77, 0.6), 0 0 25px rgba(255, 77, 77, 0.3);
+        color: #ff4d4d;
+    }
+    14% {
+        border-color: #ff9f43;
+        box-shadow: 0 0 12px rgba(255, 159, 67, 0.6), 0 0 25px rgba(255, 159, 67, 0.3);
+        color: #ff9f43;
+    }
+    28% {
+        border-color: #ffc107;
+        box-shadow: 0 0 12px rgba(255, 193, 7, 0.6), 0 0 25px rgba(255, 193, 7, 0.3);
+        color: #ffc107;
+    }
+    42% {
+        border-color: #198754;
+        box-shadow: 0 0 12px rgba(25, 135, 84, 0.6), 0 0 25px rgba(25, 135, 84, 0.3);
+        color: #198754;
+    }
+    56% {
+        border-color: #0dcaf0;
+        box-shadow: 0 0 12px rgba(13, 202, 240, 0.6), 0 0 25px rgba(13, 202, 240, 0.3);
+        color: #0dcaf0;
+    }
+    70% {
+        border-color: #0d6efd;
+        box-shadow: 0 0 12px rgba(13, 110, 253, 0.6), 0 0 25px rgba(13, 110, 253, 0.3);
+        color: #0d6efd;
+    }
+    84% {
+        border-color: #6f42c1;
+        box-shadow: 0 0 12px rgba(111, 66, 193, 0.6), 0 0 25px rgba(111, 66, 193, 0.3);
+        color: #6f42c1;
+    }
+    100% {
+        border-color: #ff4d4d;
+        box-shadow: 0 0 12px rgba(255, 77, 77, 0.6), 0 0 25px rgba(255, 77, 77, 0.3);
+        color: #ff4d4d;
+    }
+}
+
+.btn-nav.animated-robot {
+    /* Tinanggal natin ang fixed green border at color para si animation ang masunod */
+    border: 1px solid transparent !important; 
+    background: rgba(17, 34, 44, 0.8) !important;
+    animation: rgbChroma 5s infinite linear; /* 5 seconds para swabe at hindi masakit sa mata ang transition */
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-nav.animated-robot:hover {
+    animation-play-state: paused; /* Hihinto ang pagpapalit ng kulay kung saan siya tinaas ng mouse para malinis */
+    background: #ffffff !important;
+    color: #121212 !important;
+    border-color: #ffffff !important;
+    box-shadow: 0 0 30px #ffffff, 0 0 50px rgba(255, 255, 255, 0.6);
+    transform: translateY(-2px) scale(1.02);
+}

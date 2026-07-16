@@ -33,4 +33,8 @@ Route::get('/fresh-setup', function () {
 Route::get('/system-health', function () {
     return view('system-health.index');
 });
+// CI/CD Automation Page (Nasa loob ng cicd folder)
+Route::get('/cicd', function () {
+    return view('cicd.index');
+});
 

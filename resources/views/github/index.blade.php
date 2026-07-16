@@ -71,26 +71,39 @@ git push -u origin main</code></pre>
     <h2 class="section-title" style="color: #0dcaf0;">🛠️ Seksyon 2: Tatlo (3) na Mahahalagang Senaryo sa Paggamit ng Branch</h2>
     <p class="text-muted mb-4">Gabay at eksaktong pagkakasunod-sunod ng mga commands na itatayp mo sa <strong>VS Code Terminal (Local PC)</strong> mo base sa kung anong sitwasyon ang kinakaharap mo.</p>
 
-    <!-- SCENARIO 1: SOLO WORKFLOW -->
+     <!-- SCENARIO 1: SOLO WORKFLOW -->
     <div class="card mb-4 border-success">
         <h4 class="card-title" style="color: #198754;">🌟 SCENARIO 1: Solo Workflow (Gagawa ka ng Product Module para sa Safety Backup)</h4>
         <p class="card-text"><strong>Ang Sitwasyon:</strong> Ikaw lang mag-isa ang nagco-code. Hindi pa tapos o may error pa ang Product Module mo kaya itatago mo muna sa hiwalay na branch sa GitHub para safe kung sakaling masira ang PC mo, bago mo isama sa main system.</p>
         
-        <p class="text-light" style="font-size: 14px; margin-bottom: 3px;">1. Gumawa at lumipat sa bagong branch ng Product Module habang nagco-code ka pa lang:</p>
+        <p class="text-light" style="font-size: 14px; margin-bottom: 3px;">1. Siguraduhin muna na nasa 'main' branch ka bago magsimula ng kahit anong bagong feature:</p>
+        <pre><code>git branch</code></pre>
+        <p class="text-muted" style="font-size: 13px; margin-bottom: 15px;">💡 Tiyaking may asterisk at kulay berde ang salitang <strong style="color: #198754;">main</strong> sa listahan.</p>
+
+        <p class="text-light" style="font-size: 14px; margin-bottom: 3px;">2. Gumawa at lumipat sa bagong branch ng Product Module habang nagco-code ka pa lang:</p>
         <pre><code>git checkout -b <span class="ans">product-module</span></code></pre>
 
-        <p class="text-light" style="font-size: 14px; margin-top: 15px; margin-bottom: 3px;">2. I-save at i-push gabi-gabi sa sarili nitong branch para may backup online kahit may error pa ang code:</p>
+        <p class="text-light" style="font-size: 14px; margin-top: 15px; margin-bottom: 3px;">3. I-save at i-push gabi-gabi sa sarili nitong branch para may backup online kahit may error pa ang code:</p>
         <pre><code>git add .
 git commit -m "Hindi pa tapos ang product module - safety copy"
 git push origin <span class="ans">product-module</span></code></pre>
 
-        <p class="text-light" style="font-size: 14px; margin-top: 15px; margin-bottom: 3px;">3. Kapag 100% nang tapos at working na sa local PC mo, lumipat sa main Pill at i-merge ang sarili mong gawa:</p>
+        <p class="text-light" style="font-size: 14px; margin-top: 15px; margin-bottom: 3px;">4. Kapag 100% nang tapos at working na sa local PC mo, lumipat sa main at i-merge ang sarili mong gawa:</p>
         <pre><code>git checkout main
 git merge <span class="ans">product-module</span></code></pre>
 
-        <p class="text-light" style="font-size: 14px; margin-top: 15px; margin-bottom: 3px;">4. I-push na ang final combined code sa online GitHub main copy para mai-deploy na sa server:</p>
+        <p class="text-light" style="font-size: 14px; margin-top: 15px; margin-bottom: 3px;">5. I-push na ang final combined code sa online GitHub main copy para mai-deploy na sa server:</p>
         <pre><code>git push origin main</code></pre>
+
+        <p class="text-light" style="font-size: 14px; margin-top: 15px; margin-bottom: 3px;">6. (Optional) Burahin ang lokal na branch sa iyong PC kapag tapos at safe na ang lahat para malinis ang listahan:</p>
+        <p class="text-muted" style="font-size: 13px; margin-bottom: 5px;">a. I-check muna kung saang branch ka kasalukuyang nakatayo:</p>
+        <pre><code>git branch</code></pre>
+        <p class="text-muted" style="font-size: 13px; margin-top: 5px; margin-bottom: 5px;">b. Kung wala ka pa sa main branch, lumipat muna dito:</p>
+        <pre><code>git checkout main</code></pre>
+        <p class="text-muted" style="font-size: 13px; margin-top: 5px; margin-bottom: 5px;">c. Patakbuhin ang command para tuluyang burahin ang lumang feature branch:</p>
+        <pre><code>git branch -d <span class="ans">product-module</span></code></pre>
     </div>
+
 
     <!-- SCENARIO 2: TEAM COLLABORATION -->
     <div class="card mb-4 border-info">
@@ -107,6 +120,9 @@ git merge product-module</code></pre>
 
         <p class="text-light" style="font-size: 14px; margin-top: 15px; margin-bottom: 3px;">3. Kapag na-test mo na walang error ang combined system sa local XAMPP mo, i-push sa online GitHub main:</p>
         <pre><code>git push origin main</code></pre>
+        <p class="text-light" style="font-size: 14px; margin-top: 15px; margin-bottom: 3px;">4. (Optional) Burahin ang lokal na branch sa iyong PC kapag tapos at safe na ang lahat para malinis ang listahan:</p>
+<pre><code>git branch -d <span class="ans">category-branch</span></code></pre>
+
     </div>
 
     <!-- SCENARIO 3: EMERGENCY MERGE ROLLBACK (PINALIT NA DITO) -->
@@ -118,6 +134,7 @@ git merge product-module</code></pre>
         <pre><code>git reset --hard <span class="ans">HEAD~1</span></code></pre>
         <p class="text-muted" style="font-size: 13px;">💥 <strong>Resulta:</strong> Awtomatikong pupurgahin ni Git ang lahat ng may error na files ng kasama mo. Mag-te-teleport ang laptop mo pabalik sa estado kung saan ang hawak mo lang ay ang sarili mong malinis at gumaganang Product Module copy!</p>
     </div>
+    
 
 
 

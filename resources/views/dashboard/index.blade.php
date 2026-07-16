@@ -52,6 +52,12 @@
     <p class="card-text">Malupitang terminal commands para sa pag-scan ng virus, hacker network watch, at awtomatikong pagkumpuni ng mga sirang operating system files.</p>
     <a href="/system-health" class="card-btn cyan">Buksan ang Security Tools</a>
 </div>
+<!-- CI/CD Automation Card -->
+<div class="card">
+    <h3 class="card-title text-green" style="color: #198754 !important;">🤖 CI/CD WORKFLOWS</h3>
+    <p class="card-text">Awtomatikong pagpapatakbo ng mga pagsusuri (Laravel tests) sa cloud gamit ang GitHub Actions Runner bago tuluyang isama o i-merge ang code ng team.</p>
+    <a href="/cicd" class="card-btn green">Buksan ang Automation Guide</a>
+</div>
 
 
 </div>
