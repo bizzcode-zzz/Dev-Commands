@@ -165,43 +165,51 @@ public function run(): void
    <!-- 🔥 BAGONG SECTION: SECTION 5: GIT VERSION CONTROL 🔥 -->
 <div class="mb-5">
     <h2 class="section-title" style="color: #ffc107;">📁 Seksyon 5: Git Deployment Shortcuts (Pang-Araw-araw na Pag-Save)</h2>
-    <p class="text-muted mb-4">Ang limang (5) mahiwagang sunod-sunod na hakbang na palagi mong itatakbo sa terminal ng iyong <strong>Local PC (VS Code)</strong> tuwing may babaguhin ka sa code mo para umakyat ang updates sa GitHub.</p>
+    <p class="text-muted mb-4">Ang anim (6) na mahiwagang sunod-sunod na hakbang na palagi mong itatakbo sa terminal ng iyong <strong>Local PC (VS Code)</strong> tuwing may babaguhin ka sa code mo para umakyat ang updates sa GitHub nang ligtas at walang error.</p>
 
-    <!-- STEP 1 -->
-    <div class="card mb-4 border-warning" style="border: 1px solid #ffc107 !important;">
-        <h4 class="card-title" style="color: #ffc107;">1. Unang Pagsusuri (Scan Changes)</h4>
-        <p class="card-text">I-tsek kung anong mga files ang kasalukuyan mong binago sa VS Code na kulay pula.</p>
-        <pre><code>git status</code></pre>
+    <!-- STEP 1: LOCAL TESTING (NEW) -->
+    <div class="card mb-4" style="border: 1px solid #cca43b !important; background-color: #1a1a15;">
+        <h4 class="card-title" style="color: #e0be6c;">1. Siguraduhing Walang Error (Local Test)</h4>
+        <p class="card-text" style="color: #a5a5a5;">Bago mo ihanda ang iyong mga files, patakbuhin muna ito para makasigurong walang sumabog o may sirang code sa iyong local Laravel project.</p>
+        <pre><code style="color: #e0be6c; font-weight: bold;">php artisan test</code></pre>
     </div>
 
     <!-- STEP 2 -->
+    <div class="card mb-4" style="border: 1px solid #ffc107 !important;">
+        <h4 class="card-title" style="color: #ffc107;">2. Unang Pagsusuri (Scan Changes)</h4>
+        <p class="card-text">Kung pumasa (Pass) ang test sa itaas, i-tsek kung anong mga files ang kasalukuyan mong binago sa VS Code na kulay pula.</p>
+        <pre><code>git status</code></pre>
+    </div>
+
+    <!-- STEP 3 -->
     <div class="card mb-4">
-        <h4 class="card-title">2. Ihanda ang mga Files (Stage Changes)</h4>
+        <h4 class="card-title">3. Ihanda ang mga Files (Stage Changes)</h4>
         <p class="card-text">I-stage at ihanda ang lahat ng binago mo gaya ng bagong robot view page gamit ang tuldok (<code>.</code>).</p>
         <pre><code>git add .</code></pre>
     </div>
 
-    <!-- STEP 3 -->
+    <!-- STEP 4 -->
     <div class="card mb-4 border-success" style="border: 1px solid #198754 !important;">
-        <h4 class="card-title" style="color: #198754;">3. Pangalawang Pagsusuri (Verify Changes)</h4>
+        <h4 class="card-title" style="color: #198754;">4. Pangalawang Pagsusuri (Verify Changes)</h4>
         <p class="card-text">I-verify uli sa terminal kung matagumpay na naging kulay berde na ang lahat ng inihanda mong files.</p>
         <pre><code>git status</code></pre>
     </div>
 
-    <!-- STEP 4 -->
+    <!-- STEP 5 -->
     <div class="card mb-4">
-        <h4 class="card-title">4. Selyuhan ang Package (Commit)</h4>
+        <h4 class="card-title">5. Selyuhan ang Package (Commit)</h4>
         <p class="card-text">Selyuhan at lagyan ng opisyal na label o commit message ang package ng mga binago mong code.</p>
         <pre><code>git commit -m <span class="ans">"Add robot page with custom RGB animation"</span></code></pre>
     </div>
 
-    <!-- STEP 5 -->
+    <!-- STEP 6 -->
     <div class="card mb-4">
-        <h4 class="card-title">5. Itulak Paitaas sa Cloud (Push)</h4>
-        <p class="card-text">Ito ang huling utos para aktwal na i-upload ang package mula sa local computer mo papunta sa iyong online GitHub repository.</p>
+        <h4 class="card-title">6. Itulak Paitaas sa Cloud (Push)</h4>
+        <p class="card-text">Ito ang huling utos para aktwal na i-upload ang package mula sa local computer mo papunta sa online GitHub repository para saluhin ng robot.</p>
         <pre><code>git push origin main</code></pre>
     </div>
 </div>
+
 
 </div>
 @endsection
