@@ -162,27 +162,46 @@ public function run(): void
         <pre><code>php artisan optimize:clear</code></pre>
     </div>
 
-    <!-- 🔥 BAGONG SECTION: SECTION 5: GIT VERSION CONTROL 🔥 -->
+   <!-- 🔥 BAGONG SECTION: SECTION 5: GIT VERSION CONTROL 🔥 -->
 <div class="mb-5">
     <h2 class="section-title" style="color: #ffc107;">📁 Seksyon 5: Git Deployment Shortcuts (Pang-Araw-araw na Pag-Save)</h2>
-    <p class="text-muted mb-4">Ang tatlong (3) mahiwagang commands na palagi mong itatakbo sa terminal ng iyong <strong>Local PC (VS Code)</strong> tuwing may babaguhin ka sa code mo para umakyat ang updates sa GitHub.</p>
+    <p class="text-muted mb-4">Ang limang (5) mahiwagang sunod-sunod na hakbang na palagi mong itatakbo sa terminal ng iyong <strong>Local PC (VS Code)</strong> tuwing may babaguhin ka sa code mo para umakyat ang updates sa GitHub.</p>
 
+    <!-- STEP 1 -->
+    <div class="card mb-4 border-warning" style="border: 1px solid #ffc107 !important;">
+        <h4 class="card-title" style="color: #ffc107;">1. Unang Pagsusuri (Scan Changes)</h4>
+        <p class="card-text">I-tsek kung anong mga files ang kasalukuyan mong binago sa VS Code na kulay pula.</p>
+        <pre><code>git status</code></pre>
+    </div>
+
+    <!-- STEP 2 -->
     <div class="card mb-4">
-        <h4 class="card-title">1. Ihanda ang Lahat ng Files (Stage Changes)</h4>
-        <p class="card-text">Sinasabi nito kay Git na i-track at ihanda ang lahat ng bago at binagong files sa iyong computer. Ang <strong>tuldok (<code>.</code>)</strong> ay nangangahulugang LAHAT.</p>
+        <h4 class="card-title">2. Ihanda ang mga Files (Stage Changes)</h4>
+        <p class="card-text">I-stage at ihanda ang lahat ng binago mo gaya ng bagong robot view page gamit ang tuldok (<code>.</code>).</p>
         <pre><code>git add .</code></pre>
     </div>
 
-    <div class="card mb-4">
-        <h4 class="card-title">2. Selyuhan at Lagyan ng Label ang Update (Commit)</h4>
-        <p class="card-text">Binabalot nito ang mga inihanda mong files sa isang selyadong package. Palitan ang text sa loob ng <code>""</code> para maging maikling paalala kung ano ang ginawa mo.</p>
-        <pre><code>git commit -m <span class="ans">"Inupdate ko ang code at nagdagdag ng feature"</span></code></pre>
+    <!-- STEP 3 -->
+    <div class="card mb-4 border-success" style="border: 1px solid #198754 !important;">
+        <h4 class="card-title" style="color: #198754;">3. Pangalawang Pagsusuri (Verify Changes)</h4>
+        <p class="card-text">I-verify uli sa terminal kung matagumpay na naging kulay berde na ang lahat ng inihanda mong files.</p>
+        <pre><code>git status</code></pre>
     </div>
 
+    <!-- STEP 4 -->
     <div class="card mb-4">
-        <h4 class="card-title">3. Itulak Paitaas sa GitHub (Push)</h4>
-        <p class="card-text">Ito ang huling command para aktwal na ihagis at i-upload ang package mula sa local computer mo papunta sa iyong online GitHub repository layout.</p>
+        <h4 class="card-title">4. Selyuhan ang Package (Commit)</h4>
+        <p class="card-text">Selyuhan at lagyan ng opisyal na label o commit message ang package ng mga binago mong code.</p>
+        <pre><code>git commit -m <span class="ans">"Add robot page with custom RGB animation"</span></code></pre>
+    </div>
+
+    <!-- STEP 5 -->
+    <div class="card mb-4">
+        <h4 class="card-title">5. Itulak Paitaas sa Cloud (Push)</h4>
+        <p class="card-text">Ito ang huling utos para aktwal na i-upload ang package mula sa local computer mo papunta sa iyong online GitHub repository.</p>
         <pre><code>git push origin main</code></pre>
     </div>
+</div>
+
 </div>
 @endsection
