@@ -37,4 +37,11 @@ Route::get('/system-health', function () {
 Route::get('/cicd', function () {
     return view('cicd.index');
 });
+Route::get('/module-blueprint', function () {
+    return view('module-blueprint.index');
+});
+Route::get('/security-features', function () {
+    return view('security.index'); // ◄── 'security' folder + 'index' blade file
+});
+
 

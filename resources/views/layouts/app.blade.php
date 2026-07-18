@@ -27,6 +27,10 @@
     
     <!-- ROW 3 / AUTOMATION SPECIAL: ROBOT BUTTON -->
     <a class="btn-nav animated-robot" href="/cicd">🤖 CI/CD ROBOT</a>
+
+        <!-- ROW 3 / ADDITIONAL AUTOMATION & STRUCTURAL TOOLS -->
+    <a class="btn-nav cyan-theme" href="/module-blueprint" style="color: #b23cfd !important; border-color: rgba(178, 60, 253, 0.3) !important;">🗂️ MODULE BP</a>
+
 </div>
 
 

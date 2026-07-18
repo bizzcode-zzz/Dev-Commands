@@ -59,6 +59,12 @@
     <a href="/cicd" class="card-btn green">Buksan ang Automation Guide</a>
 </div>
 
+    <!-- Laravel CRUD Module Card -->
+    <div class="card">
+        <h3 class="card-title text-cyan" style="color: #b23cfd !important;">🗂️ MODULE BLUEPRINT</h3>
+        <p class="card-text">Universal checklist ng mga files at folders na kailangang likhain tuwing gagawa ng bagong CRUD feature gaya ng Products module.</p>
+        <a href="/module-blueprint" class="card-btn cyan" style="background-color: #b23cfd !important; color: #ffffff !important;">Buksan ang Module Guide</a>
+    </div>
 
 </div>
 @endsection
