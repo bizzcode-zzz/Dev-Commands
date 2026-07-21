@@ -4,55 +4,73 @@
 
 @section('content')
 
-<div class="container" style="max-width: 600px; margin: 0 auto; padding: 20px; text-center">
+<div class="container" style="max-width: 600px; margin: 0 auto; padding: 20px;">
 
     <!-- MAIN PAGE TITLE -->
-    <div class="mb-5 text-center" style="margin-top: 50px; margin-bottom: 40px;">
-        <h1 style="font-size: 32px; font-weight: 800; color: #ffffff; letter-spacing: -0.5px;">
+    <div class="mb-5 text-center" style="margin-top: 50px; margin-bottom: 40px; text-align: center;">
+        <h1 style="font-size: 32px; font-weight: 800; color: #ffffff; letter-spacing: -0.5px; margin-bottom: 10px;">
             📂 Project Inventory Sales
         </h1>
-        <p class="text-muted" style="font-size: 14px; color: #a5a5a5 !important;">
+        <p class="text-muted" style="font-size: 14px; color: #a5a5a5 !important; margin: 0;">
             Piliin ang module sa ibaba upang lumipat ng pahina:
         </p>
     </div>
 
-    <!-- 🌐 SOLID MODULE BUTTONS MENU -->
-    <div style="display: flex; flex-direction: column; gap: 12px;">
+    <!-- 🌐 FLEX GRID MODULE BUTTONS MENU -->
+    <div style="display: flex; flex-wrap: wrap; gap: 12px;">
         
         <!-- BUTTON 1: CURRENTLY ACTIVE RBAC PAGE -->
-        <a href="/module-blueprint" style="display: block; text-align: center; background: #b23cfd; color: #ffffff; text-decoration: none; padding: 12px; border-radius: 6px; font-size: 14px; font-weight: 700; border: 1px solid #b23cfd; transition: opacity 0.2s;">
+        <a href="/module-blueprint" style="flex: 1 1 calc(50% - 12px); min-width: 160px; text-align: center; background: #b23cfd; color: #ffffff; text-decoration: none; padding: 10px; border-radius: 6px; font-size: 13px; font-weight: 700; border: 1px solid #b23cfd; transition: opacity 0.2s; box-sizing: border-box;">
             🛡️ RBAC Gate Module
         </a>
 
-        <!-- BUTTON 2: PRODUCTS MODULE (READY FOR LINK) -->
-        <a href="#" style="display: block; text-align: center; background: #1a1a1a; color: #ff79c6; text-decoration: none; padding: 12px; border-radius: 6px; font-size: 14px; font-weight: 700; border: 1px solid #ff79c6; transition: background 0.2s;">
+        <!-- BUTTON 2: PRODUCTS MODULE -->
+        <a href="#" style="flex: 1 1 calc(50% - 12px); min-width: 160px; text-align: center; background: #1a1a1a; color: #ff79c6; text-decoration: none; padding: 10px; border-radius: 6px; font-size: 13px; font-weight: 700; border: 1px solid #ff79c6; transition: background 0.2s; box-sizing: border-box;">
             📦 Product Module
         </a>
 
-        <!-- BUTTON 3: CATEGORIES MODULE (READY FOR LINK) -->
-        <a href="#" style="display: block; text-align: center; background: #1a1a1a; color: #0dcaf0; text-decoration: none; padding: 12px; border-radius: 6px; font-size: 14px; font-weight: 700; border: 1px solid #0dcaf0; transition: background 0.2s;">
+        <!-- BUTTON 3: CATEGORIES MODULE -->
+        <a href="#" style="flex: 1 1 calc(50% - 12px); min-width: 160px; text-align: center; background: #1a1a1a; color: #0dcaf0; text-decoration: none; padding: 10px; border-radius: 6px; font-size: 13px; font-weight: 700; border: 1px solid #0dcaf0; transition: background 0.2s; box-sizing: border-box;">
             🗂️ Category Module
         </a>
 
-        <!-- BUTTON 4: SUPPLIERS MODULE (READY FOR LINK) -->
-        <a href="#" style="display: block; text-align: center; background: #1a1a1a; color: #2ecc71; text-decoration: none; padding: 12px; border-radius: 6px; font-size: 14px; font-weight: 700; border: 1px solid #2ecc71; transition: background 0.2s;">
+        <!-- BUTTON 4: SUPPLIERS MODULE -->
+        <a href="#" style="flex: 1 1 calc(50% - 12px); min-width: 160px; text-align: center; background: #1a1a1a; color: #2ecc71; text-decoration: none; padding: 10px; border-radius: 6px; font-size: 13px; font-weight: 700; border: 1px solid #2ecc71; transition: background 0.2s; box-sizing: border-box;">
             🚚 Supplier Module
         </a>
 
-        <!-- BUTTON 5: SALES MODULE (READY FOR LINK) -->
-        <a href="#" style="display: block; text-align: center; background: #1a1a1a; color: #ffc107; text-decoration: none; padding: 12px; border-radius: 6px; font-size: 14px; font-weight: 700; border: 1px solid #ffc107; transition: background 0.2s;">
+        <!-- BUTTON 5: SALES MODULE -->
+        <a href="#" style="flex: 1 1 calc(50% - 12px); min-width: 160px; text-align: center; background: #1a1a1a; color: #ffc107; text-decoration: none; padding: 10px; border-radius: 6px; font-size: 13px; font-weight: 700; border: 1px solid #ffc107; transition: background 0.2s; box-sizing: border-box;">
             📤 Sales Module
         </a>
-        <!-- 🚀 PANIBAGONG BUTTON: SECURITY FEATURES (READY FOR LINK) -->
-                <!-- 🔒 SECURITY FEATURES MODULE BUTTON -->
-        <a href="/security-features" style="display: block; text-align: center; background: #1a1a1a; color: #0dcaf0; text-decoration: none; padding: 12px; border-radius: 6px; font-size: 14px; font-weight: 700; border: 1px solid #0dcaf0; transition: background 0.2s;">
+
+        <!-- BUTTON 6: SECURITY FEATURES -->
+        <a href="/security-features" style="flex: 1 1 calc(50% - 12px); min-width: 160px; text-align: center; background: #1a1a1a; color: #0dcaf0; text-decoration: none; padding: 10px; border-radius: 6px; font-size: 13px; font-weight: 700; border: 1px solid #0dcaf0; transition: background 0.2s; box-sizing: border-box;">
             🔒 Security Features
         </a>
+
+        <!-- BUTTON 7: USER MANAGEMENT MODULE -->
+        <a href="/user-management" style="flex: 1 1 calc(50% - 12px); min-width: 160px; text-align: center; background: #1a1a1a; color: #ff79c6; text-decoration: none; padding: 10px; border-radius: 6px; font-size: 13px; font-weight: 700; border: 1px solid #ff79c6; transition: background 0.2s; box-sizing: border-box;">
+            👥 User Management
+        </a>
+<!-- 🛡️ LOGS MODULE BUTTON -->
+<a href="/logs" style="flex: 1 1 calc(50% - 12px); min-width: 160px; text-align: center; background: #1a1a1a; color: #ff6e4a; text-decoration: none; padding: 10px; border-radius: 6px; font-size: 13px; font-weight: 700; border: 1px solid #ff6e4a; transition: background 0.2s; box-sizing: border-box;">
+    🛡️ Logs Module
+
+    <!-- 📊 REPORTS MODULE BUTTON -->
+<a href="/reports" style="flex: 1 1 calc(50% - 12px); min-width: 160px; text-align: center; background: #1a1a1a; color: #0dcaf0; text-decoration: none; padding: 10px; border-radius: 6px; font-size: 13px; font-weight: 700; border: 1px solid #0dcaf0; transition: background 0.2s; box-sizing: border-box;">
+    📊 Reports Module
+</a>
+
+</a>
+
 
 
     </div>
 
 </div>
+ 
+
 
 
 
@@ -251,8 +269,9 @@ php artisan make:seeder RolePermissionSeeder</code></pre>
             <div style="color: #0dcaf0;">Document 📄 app/Http/Controllers/SalesController.php <span style="font-size: 12px; color: #a5a5a5;">(May Edit Dito — Guard Checks for Index, Store & Destroy)</span></div>
             <div style="color: #0dcaf0;">Document 📄 app/Http/Controllers/DashboardController.php <span style="font-size: 12px; color: #a5a5a5;">(May Edit Dito — Guard Checks for Index / Main Screen Access)</span></div>
             <div style="color: #0dcaf0;">Document 📄 app/Http/Controllers/ReportsController.php <span style="font-size: 12px; color: #a5a5a5;">(May Edit Dito — Guard Checks for Financial & Stock Metrics)</span></div>
-
+            <div style="color: #0dcaf0;">Document 📄 app/Http/Controllers/UserController.php <span style="font-size: 12px; color: #a5a5a5;">(May Edit Dito — Guard Checks for Financial & Stock Metrics)</span></div>
             <div style="color: #ff79c6;">Document 📄 resources/views/products/index.blade.php <span style="font-size: 12px; color: #a5a5a5;">(May Edit Dito — Add Product Form Restriction)</span></div>
+        
         </div>
 
         <!-- ARTISAN COMMAND FOR MIDDLEWARE -->
@@ -462,6 +481,9 @@ php artisan make:seeder RolePermissionSeeder</code></pre>
     <span style="color: #569cd6;">if</span> (! <span style="color: #9cdcfe;">auth</span>()-><span style="color: #dcdcaa;">user</span>()-><span style="color: #dcdcaa;">hasPermission</span>(<span style="color: #ce9178;">'reports.view'</span>)) { <span style="color: #dcdcaa;">abort</span>(<span style="color: #b5cea8;">403</span>); }
     <span style="color: #6a9955;">// Filter products hitting the safety threshold limit alerts...</span>
 }
+============================================================
+// 📄 app/Http/Controllers/UserController.php
+// ============================================================</span>
 
 
 </code></pre>

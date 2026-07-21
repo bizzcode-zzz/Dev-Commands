@@ -43,5 +43,19 @@ Route::get('/module-blueprint', function () {
 Route::get('/security-features', function () {
     return view('security.index'); // ◄── 'security' folder + 'index' blade file
 });
+// Route para sa User Management
+Route::get('/user-management', function () {
+    return view('module-blueprint.user-management'); // ◄── Binago ang folder path
+});
+
+// Route para sa Logs Module
+Route::get('/logs', function () {
+    return view('module-blueprint.logs'); // ◄── Binago ang folder path
+});
+// 📊 ROUTE PARA SA REPORTS MODULE
+Route::get('/reports', function () {
+    return view('module-blueprint.reports');
+});
+
 
 
