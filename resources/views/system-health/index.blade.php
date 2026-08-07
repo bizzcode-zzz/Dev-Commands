@@ -135,11 +135,11 @@
     </div>
 </div>
 
-<!-- SECTION 3: INSTANT INTERFACE RESTART (PURPLE THEME) -->
+<!-- SECTION 2: INSTANT INTERFACE RESTART (PURPLE THEME) -->
 <div class="mb-5">
     <h2 class="section-title" style="color: #6f42c1;">⚡ Seksyon 2: Mabilisang Lunas sa Pag-hang (Instant Interface Refresh)</h2>
     <p class="text-muted mb-3">
-        Gamitin ito kapag biglang nag-freeze ang iyong taskbar, desktop icons, o hindi mo ma-click ang mga nakabukas na folders [INDEX].
+        Gamitin ito kapag biglang nag-freeze ang iyong taskbar, desktop icons, o hindi mo ma-click ang mga nakabukas na folders.
     </p>
 
     <!-- 1. Explorer Quick Refresh Card -->
@@ -147,7 +147,7 @@
         <div class="card-body py-3">
             <h5 class="card-title mb-1" style="color: #6f42c1; font-weight: bold;">1. Explorer Quick Refresh</h5>
             <p class="card-text small mb-2 text-dark">
-                <strong>⚙️ Aksyon:</strong> Parang nag-restart ka ng PC pero para lang sa desktop interface ng Windows [INDEX]. Puwersahan nitong pinapatay at muling binubuksan ang Taskbar, Start Menu, at Desktop Icons sa loob ng 2-3 segundo nang <strong>hindi masasara</strong> ang iyong mga kasalukuyang ginagawang apps [INDEX].
+                <strong>⚙️ Aksyon:</strong> Parang nag-restart ka ng PC pero para lang sa desktop interface ng Windows. Puwersahan nitong pinapatay at muling binubuksan ang Taskbar, Start Menu, at Desktop Icons sa loob ng 2-3 segundo nang <strong>hindi masasara</strong> ang iyong mga kasalukuyang ginagawang apps.
             </p>
             
             <!-- HIGH CONTRAST LIGHT PURPLE CODE BOX -->
@@ -162,6 +162,8 @@
             </div>
         </div>
     </div>
+
+
 
         <!-- 2. All-in-One CPU Overload Buster Card -->
     <!-- 💡 PWEDENG PATAKBUHIN KAHIT ANONG ORAS -->
@@ -352,18 +354,19 @@
 <!-- 💡 PWEDENG PATAKBUHIN KAHIT ANONG ORAS -->
 <div class="mb-5">
     <h2 class="section-title" style="color: #198754;">🚀 Seksyon 6: Speed Optimization & Deep Cleanup (Kahit Anong Oras)</h2>
-    <p class="text-muted mb-3">Mga mabilisang command para bawiin ang storage space at pabilisin ang boot time ng iyong PC [INDEX].</p>
+    <p class="text-muted mb-3">Mga mabilisang command para bawiin ang storage space at pabilisin ang boot time ng iyong PC.</p>
 
     <!-- Deep Storage Cleanup -->
     <div class="card mb-3 shadow-sm" style="border: 2px solid #198754;">
         <div class="card-body py-3">
             <h5 class="card-title mb-1" style="color: #198754; font-weight: bold;">1. Automatic Junk Purge & Drive Optimize</h5>
             <p class="card-text small mb-2 text-dark">
-                <strong>⚙️ Aksyon:</strong> Awtomatikong buburahin ang gigabytes ng Windows Update junk, temporary logs, at cache nang ligtas. Kasabay nitong i-o-optimize (defrag/trim) ang iyong C: drive para sa mas mabilis na loading ng system [INDEX].
+                <strong>⚙️ Aksyon:</strong> Awtomatikong buburahin ang gigabytes ng Windows Update junk, temporary logs, at cache nang ligtas. Kasabay nitong i-o-optimize (Trim/Defrag) ang iyong C: drive para sa mas mabilis na loading ng system nang hindi sinisira ang SSD.
             </p>
             <div class="p-2 rounded mb-2" style="background-color: #f4fbf7; border: 1px solid #c7ebdb; font-family: monospace;">
                 <p class="small mb-1" style="color: #146c43; font-weight: bold;">💡 I-copy at i-paste ito sa PowerShell bilang Administrator:</p>
-                <pre class="mb-0" style="color: #000000; font-size: 0.95rem; font-weight: bold; white-space: pre-wrap; word-wrap: break-word;"><code>Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue; cleanmgr /autoclean; Optimize-Volume -DriveLetter C -Defrag -Verbose</code></pre>
+                <!-- KORREKSYON: Pinalitan ang /autoclean ng /sagerun:1, at ang -Defrag ng -ReTrim para ligtas sa SSD -->
+                <pre class="mb-0" style="color: #000000; font-size: 0.95rem; font-weight: bold; white-space: pre-wrap; word-wrap: break-word;"><code>Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue; cleanmgr /sagerun:1; Optimize-Volume -DriveLetter C -ReTrim -Verbose</code></pre>
             </div>
             <div class="d-flex align-items-center small text-muted gap-3">
                 <span class="badge bg-warning text-dark">⏳ 5-15 mins</span>
@@ -377,7 +380,7 @@
         <div class="card-body py-3">
             <h5 class="card-title mb-1" style="color: #198754; font-weight: bold;">2. Startup Apps Audit</h5>
             <p class="card-text small mb-2 text-dark">
-                <strong>⚙️ Aksyon:</strong> I-li-list ang mga app na sumasabay magbukas pagka-on ng PC. Kung may mabigat na app na hindi kailangan (gaya ng Spotify o Discord), i-disable ito sa <strong>Task Manager (Ctrl+Shift+Esc) > Startup Apps</strong> [INDEX].
+                <strong>⚙️ Aksyon:</strong> I-li-list ang mga app na sumasabay magbukas pagka-on ng PC. Kung may mabigat na app na hindi kailangan (gaya ng Spotify o Discord), i-disable ito sa <strong>Task Manager (Ctrl+Shift+Esc) > Startup Apps</strong>.
             </p>
             <div class="p-2 rounded mb-2" style="background-color: #f4fbf7; border: 1px solid #c7ebdb; font-family: monospace;">
                 <p class="small mb-1" style="color: #146c43; font-weight: bold;">💡 I-copy at i-paste ito sa PowerShell bilang Administrator:</p>
@@ -401,7 +404,7 @@
         <div class="card-body py-3">
             <h5 class="card-title mb-1" style="color: #e11d48; font-weight: bold;">1. Flush DNS Cache at Network Refresh</h5>
             <p class="card-text small mb-2 text-dark">
-                <strong>⚙️ Aksyon:</strong> Nililinis nito ang lumang internet cache ng iyong PC. Mabilisang lunas kapag ayaw gumana ng <code>localhost</code> o kapag mabagal mag-download gamit ang <code>composer install</code> o <code>npm install</code> [INDEX].
+                <strong>⚙️ Aksyon:</strong> Nililinis nito ang lumang internet cache ng iyong PC. Mabilisang lunas kapag ayaw gumana ng <code>localhost</code> o kapag mabagal mag-download gamit ang <code>composer install</code> o <code>npm install</code>.
             </p>
             <div class="p-2 rounded mb-2" style="background-color: #fff5f7; border: 1px solid #fbcfe8; font-family: monospace;">
                 <p class="small mb-1" style="color: #9d174d; font-weight: bold;">💡 I-copy at i-paste ito sa PowerShell bilang Administrator:</p>
@@ -419,11 +422,13 @@
             </p>
             <div class="p-2 rounded mb-2" style="background-color: #fff5f7; border: 1px solid #fbcfe8; font-family: monospace;">
                 <p class="small mb-1" style="color: #9d174d; font-weight: bold;">💡 I-copy at i-paste ito sa PowerShell bilang Administrator:</p>
-                <pre class="mb-0" style="color: #000000; font-size: 0.95rem; font-weight: bold; white-space: pre-wrap; word-wrap: break-word;"><code>$port = 8000; $conn = Get-NetTCPConnection -LocalPort $port -ErrorAction SilentlyContinue; if ($conn) { Stop-Process -Id $conn.OwningProcess -Force }</code></pre>
+                <!-- KORREKSYON: Dinagdagan ng 'Select-Object -First 1' para hindi mag-error kapag marami ang koneksyon sa port -->
+                <pre class="mb-0" style="color: #000000; font-size: 0.95rem; font-weight: bold; white-space: pre-wrap; word-wrap: break-word;"><code>$port = 8000; $conn = Get-NetTCPConnection -LocalPort $port -ErrorAction SilentlyContinue | Select-Object -First 1; if ($conn) { Stop-Process -Id $conn.OwningProcess -Force }</code></pre>
             </div>
         </div>
     </div>
 </div>
+
 <!-- ================================================================= -->
 <!-- PART 4: PERFORMANCE TWEAKS & DEBLOAT CONTROLS (SECTIONS 8-10)    -->
 <!-- ================================================================= -->
