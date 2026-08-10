@@ -66,5 +66,13 @@
         <a href="/module-blueprint" class="card-btn cyan" style="background-color: #b23cfd !important; color: #ffffff !important;">Buksan ang Module Guide</a>
     </div>
 
+        <!-- React + Inertia Card -->
+    <div class="card" style="border: 1px solid #2d2d2d; background: #1a1a1a; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+        <h3 class="card-title" style="color: #61dafb !important;">⚛️ REACT & INERTIA</h3>
+        <p class="card-text">Gabay sa pag-setup ng modernong SPA stack gamit ang Laravel backend, Inertia.js routing, at React frontend components.</p>
+        <a href="/react-inertia" class="card-btn" style="background: #15232d; color: #61dafb; border: 1px solid #61dafb; display: inline-block; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='#61dafb'; this.style.color='#1a1a1a';" onmouseout="this.style.background='#15232d'; this.style.color='#61dafb';">Buksan ang REACT Sheets</a>
+    </div>
+
+
 </div>
 @endsection

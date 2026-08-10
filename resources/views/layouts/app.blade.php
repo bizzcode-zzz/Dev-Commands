@@ -30,6 +30,8 @@
 
         <!-- ROW 3 / ADDITIONAL AUTOMATION & STRUCTURAL TOOLS -->
     <a class="btn-nav cyan-theme" href="/module-blueprint" style="color: #b23cfd !important; border-color: rgba(178, 60, 253, 0.3) !important;">🗂️ MODULE BP</a>
+     <!-- ⚛️ BAGONG DAGDAG: REACT + INERTIA BUTTON -->
+    <a class="btn-nav" href="/react-inertia" style="color: #61dafb !important; border-color: rgba(97, 218, 251, 0.3) !important; text-shadow: 0 0 10px rgba(97, 218, 251, 0.2);">⚛️ REACT INERTIA</a>
 
 </div>
 

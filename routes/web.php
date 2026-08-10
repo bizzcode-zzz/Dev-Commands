@@ -56,6 +56,10 @@ Route::get('/logs', function () {
 Route::get('/reports', function () {
     return view('module-blueprint.reports');
 });
+// Route para sa React + Inertia Reviewer Page
+Route::get('/react-inertia', function () {
+    return view('react-inertia.index'); // Turo sa folder na react-inertia at file na index
+})->name('react.inertia');
 
 
 
