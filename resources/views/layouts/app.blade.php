@@ -28,13 +28,24 @@
     <!-- ROW 3 / AUTOMATION SPECIAL: ROBOT BUTTON -->
     <a class="btn-nav animated-robot" href="/cicd">🤖 CI/CD ROBOT</a>
 
-        <!-- ROW 3 / ADDITIONAL AUTOMATION & STRUCTURAL TOOLS -->
+            <!-- ROW 3 / ADDITIONAL AUTOMATION & STRUCTURAL TOOLS -->
     <a class="btn-nav cyan-theme" href="/module-blueprint" style="color: #b23cfd !important; border-color: rgba(178, 60, 253, 0.3) !important;">🗂️ MODULE BP</a>
-     <!-- ⚛️ BAGONG DAGDAG: REACT + INERTIA BUTTON -->
-    <a class="btn-nav" href="/react-inertia" style="color: #61dafb !important; border-color: rgba(97, 218, 251, 0.3) !important; text-shadow: 0 0 10px rgba(97, 218, 251, 0.2);">⚛️ REACT INERTIA</a>
+    
+    <!-- ⚛️ REACT INERTIA (Naka-match sa Cyan Theme) -->
+    <a class="btn-nav cyan-theme" href="/react-inertia">⚛️ REACT INERTIA</a>
+    
+    <!-- 🎛️ WORDPRESS (Naka-match sa Bluish Glow/Animated Health variable structure) -->
+    <a class="btn-nav red-theme" href="/wordpress">🗛️ WORDPRESS</a>
 
+<!-- 🌐 REST API (Bagong Dagdag para sa API Tutorial) -->
+    <a class="btn-nav green-theme" href="/rest-api" style="color: #ffaa00 !important; border-color: rgba(255, 170, 0, 0.3) !important;">🌐 REST API</a>
+      <!-- 💻 DEV CHECKS (Kompletong gabay para sa Tools, Postman Setup, at Status Codes) -->
+    <a class="btn-nav cyan-theme" href="/dev-checks" style="color: #ff4d4d !important; border-color: rgba(255, 77, 77, 0.3) !important;">💻 DEV CHECKS</a>
+ <!-- 📖 CODEX (Bagong Dagdag para sa ChatGPT/AI Code Generation Master Sheets) -->
+    <a class="btn-nav cyan-theme" href="/chatgpt-codex" style="color: #10a37f !important; border-color: rgba(16, 163, 127, 0.3) !important; text-shadow: 0 0 10px rgba(16, 163, 127, 0.2);">📖 CODEX</a>
 </div>
 
+  
 
 
 

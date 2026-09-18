@@ -73,6 +73,26 @@
         <a href="/react-inertia" class="card-btn" style="background: #15232d; color: #61dafb; border: 1px solid #61dafb; display: inline-block; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='#61dafb'; this.style.color='#1a1a1a';" onmouseout="this.style.background='#15232d'; this.style.color='#61dafb';">Buksan ang REACT Sheets</a>
     </div>
 
+    <!-- WordPress Dev Card -->
+    <div class="card" style="border: 1px solid #2d2d2d; background: #1a1a1a; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+        <h3 class="card-title" style="color: #21759b !important;">🎛️ WORDPRESS DEVELOPMENT</h3>
+        <p class="card-text">Gabay sa custom theme development, plugin configuration, actions/filters hooks, at local execution workflows para sa WordPress platform.</p>
+        <a href="/wordpress" class="card-btn" style="background: #142129; color: #21759b; border: 1px solid #21759b; display: inline-block; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='#21759b'; this.style.color='#1a1a1a';" onmouseout="this.style.background='#142129'; this.style.color='#21759b';">Buksan ang WORDPRESS Sheets</a>
+    </div>
+
+        <!-- REST API Tutorial Card -->
+    <div class="card" style="border: 1px solid #2d2d2d; background: #1a1a1a; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+        <h3 class="card-title" style="color: #ffaa00 !important;">🌐 REST API STEP-BY-STEP</h3>
+        <p class="card-text">Kompletong gabay mula sa instalasyon, pag-setup ng routes/api.php, paggawa ng controllers, at pag-secure gamit ang Laravel Sanctum tokens.</p>
+        <a href="/rest-api" class="card-btn" style="background: #261c10; color: #ffaa00; border: 1px solid #ffaa00; display: inline-block; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='#ffaa00'; this.style.color='#1a1a1a';" onmouseout="this.style.background='#261c10'; this.style.color='#ffaa00';">Buksan ang API Tutorial</a>
+    </div>
+
+    <!-- Developer Checks Card -->
+<div class="card" style="border: 1px solid #2d2d2d; background: #1a1a1a; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+    <h3 class="card-title" style="color: #ff4d4d !important;">💻 DEV CHECKS &amp; TOOLS</h3>
+    <p class="card-text">Ang kumpletong checklist para sa panimulang pag-setup ng Postman settings, workspace configs, at diagnostics para sa unibersal na API HTTP Server Status Codes [INDEX].</p>
+    <a href="/dev-checks" class="card-btn" style="background: #2b1515; color: #ff4d4d; border: 1px solid #ff4d4d; display: inline-block; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold; transition: all 0.2s;" onmouseover="this.style.background='#ff4d4d'; this.style.color='#1a1a1a';" onmouseout="this.style.background='#2b1515'; this.style.color='#ff4d4d';">Buksan ang Dev Checklist</a>
+</div>
 
 </div>
 @endsection

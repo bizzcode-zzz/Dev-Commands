@@ -8,6 +8,13 @@
   Dahil 3 rows ang buttons mo, gumamit tayo ng explicit positioning at margin displacement.
   Ito ang literal na hahila sa buong page content pababa para siguradong lumapag ito sa ilalim ng navbar.
 -->
+      <!-- ─── SHORTCUT TO SEPARATE INSTALLATION GUIDE PAGE ─── -->
+    <div style="margin-bottom: 30px;">
+        <a href="/react-installation" style="display: inline-block; color: #61dafb; text-decoration: none; font-size: 14px; font-weight: 600; border: 1px solid #2d2d2d; padding: 12px 24px; border-radius: 6px; background: #15232d; border-color: rgba(97, 218, 251, 0.3); text-shadow: 0 0 10px rgba(97, 218, 251, 0.2); transition: all 0.2s;" onmouseover="this.style.background='#61dafb'; this.style.color='#1a1a1a';" onmouseout="this.style.background='#15232d'; this.style.color='#61dafb';">
+            ⚛️ REACT INSTALLATION GUIDE
+        </a>
+    </div>
+
 <div style="position: relative; display: block; clear: both; width: 100%; margin-top: 140px; padding-top: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
 
     <!-- ─── UNIVERSAL ALIGNMENT WRAPPER (KOPYA SA BIZZSOFT STRUCTURE) ─── -->
@@ -448,6 +455,10 @@
                 <code style="color: #9cdcfe; font-family: 'Consolas', monospace; font-size: 12px; background: #111; padding: 2px 6px; border-radius: 4px; display: inline-block; margin-top: 5px;">import { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';</code>
             </div>
         </div>
+
+
+
+        
 
 
 @endsection
